@@ -22,7 +22,6 @@ average /= arr.length;
 max(1, 2, 4, 5);  // result to 5 
 max(5, 2, 7, 1, 6);  // result to 7
 
-
-
+cosole.log(max);
 
 
