@@ -1,29 +1,25 @@
+//1.Function and Array
+//Complete the function below to find the  max number  of passing numbers. You may refer to this  MDN document  about rest parameters of the function.
 
+function max(...numbers){
+// your code here, for-loop method preferred
+	var arr = [...numbers];
+	var min = arr[0];
+	var max = arr[0];
+	var average = 0;
 
-function avg(data){
-var total = 0;
-for(var i = 0; i < avg.length; i++) {
-    total += avg[i];
+for(var i = 0; i < arr.length; i++) {
+  if(arr[i] > max) max = arr[i];
 }
-var avg = total / avg.length;
-} 
+
+return max;
+}
+
+var r = max(1, 2, 4, 5);  // result to 5 
+var rr = max(5, 2, 7, 1, 6);  // result to 7
 
 
-avg({
-size:3, products:[
-{
-name:"Product 1",
-price:100 },
-{
-name:"Product 2",
-price:700 },
-{
-name:"Product 3",
-price:250 }
-]
-});  // show the average price of all products
+console.log(r);
+console.log(rr);
 
 
-avg.Product 1;
-avg.Product 2;
-avg.Profuct 3;
