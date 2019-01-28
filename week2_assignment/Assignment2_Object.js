@@ -60,3 +60,27 @@ return args.n1+args.n2; }
 We can call it by passing an object created by JSON literal: add({n1:3, n2:4});
 And, you should find another way to create a proper object. // your way
 */
+
+
+
+1 + 1
+var adddddd = (nQ, nP) =>{
+	return ({
+		op: '+',
+		n1: nQ,
+		n2: nP,
+	})
+}
+var sub = (nQ, nP) =>{
+	return ({
+		op: '-',
+		n1: nQ,
+		n2: nP,
+	})
+}
+
+
+calculate(adddddd( 1 , 4))
+calculate(sub( 1 , 4))
+
+
